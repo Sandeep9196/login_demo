@@ -74,13 +74,13 @@ class _AuthScreenState extends State<AuthScreen> {
 
     Future<void> loginUser() async {
       if (emailController.text != "" && passwordController.text != "") {
-        var login2 = await login(emailController.text, passwordController.text);
+        // var login2 = await login(emailController.text, passwordController.text);
 
-        if (login2.token != "") {
-          Navigator.pushNamed(context, '/home-screen');
-        }
-      } else {
-        print('Email and password required');
+        // if (login2.token != "") {
+        Navigator.pushNamed(context, '/home-screen');
+        //     }
+        //   } else {
+        //     print('Email and password required');}
       }
     }
 
@@ -99,27 +99,25 @@ class _AuthScreenState extends State<AuthScreen> {
                     child: Stack(
                       children: <Widget>[
                         Positioned(
-                          left: 30,
-                          width: 80,
-                          height: 200,
-                          child: Container(
-                            decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/light-1.png'))),
-                          )
-                        ),
+                            left: 30,
+                            width: 80,
+                            height: 200,
+                            child: Container(
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/light-1.png'))),
+                            )),
                         Positioned(
-                          left: 140,
-                          width: 80,
-                          height: 150,
-                          child: Container(
-                            decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/light-2.png'))),
-                          )
-                        ),
+                            left: 140,
+                            width: 80,
+                            height: 150,
+                            child: Container(
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/light-2.png'))),
+                            )),
                         Positioned(
                           right: 40,
                           top: 40,
@@ -128,8 +126,8 @@ class _AuthScreenState extends State<AuthScreen> {
                           child: Container(
                             decoration: const BoxDecoration(
                                 image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/clock.png'))),
+                                    image:
+                                        AssetImage('assets/images/clock.png'))),
                           ),
                         ),
                         Positioned(
@@ -160,8 +158,7 @@ class _AuthScreenState extends State<AuthScreen> {
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: const [
                                 BoxShadow(
-                                    color:
-                                    Color.fromRGBO(143, 148, 251, .2),
+                                    color: Color.fromRGBO(143, 148, 251, .2),
                                     blurRadius: 20.0,
                                     offset: Offset(0, 10))
                               ]),
@@ -171,15 +168,15 @@ class _AuthScreenState extends State<AuthScreen> {
                                 padding: const EdgeInsets.all(8.0),
                                 decoration: const BoxDecoration(
                                     border: Border(
-                                        bottom: BorderSide(
-                                            color: Colors.white))),
+                                        bottom:
+                                            BorderSide(color: Colors.white))),
                                 child: TextFormField(
                                   controller: emailController,
                                   decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Email or Phone number",
-                                      hintStyle: TextStyle(
-                                          color: Colors.grey[400])),
+                                      hintStyle:
+                                          TextStyle(color: Colors.grey[400])),
                                 ),
                               ),
                               Container(
@@ -189,8 +186,8 @@ class _AuthScreenState extends State<AuthScreen> {
                                   decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Password",
-                                      hintStyle: TextStyle(
-                                          color: Colors.grey[400])),
+                                      hintStyle:
+                                          TextStyle(color: Colors.grey[400])),
                                 ),
                               )
                             ],
@@ -212,8 +209,7 @@ class _AuthScreenState extends State<AuthScreen> {
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                    borderRadius:
-                                    BorderRadius.circular(20.0),
+                                    borderRadius: BorderRadius.circular(20.0),
                                   ),
                                 ),
                                 minimumSize: MaterialStateProperty.all(
