@@ -66,6 +66,10 @@ flutter:
     - assets/images/light-2.png
     - assets/images/light-1.png
     - assets/images/background.png
+    - assets/images/lake.jpg
+    - assets/images/lake2.jpeg
+    - assets/images/a.jpg
+
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

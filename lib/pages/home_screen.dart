@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> pageList = [
     const HomeLayoutWidget(),
-    const SettingsLayoutWidget(),
+    // const SettingsLayoutWidget(),
     const ProfileLayoutWidget(),
   ];
 
@@ -42,8 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
         unselectedItemColor: const Color.fromRGBO(143, 148, 251, 0.5),
         items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
-          BottomNavigationBarItem(
-              label: 'Settings', icon: Icon(Icons.settings)),
+          // BottomNavigationBarItem(
+          //     label: 'Settings', icon: Icon(Icons.settings)),
           BottomNavigationBarItem(label: 'Profile', icon: Icon(Icons.verified_user)),
         ],
         onTap: changeRoute,
